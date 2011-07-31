@@ -95,15 +95,15 @@ Ystart=2004
 Yend=2009
 
 #executing MaxAnomaly
-MaxAnomaly(ndvidirectory, region, Ystart, Yend,
-    outname="Mzimba", outext="show") 
+\donttest{MaxAnomaly(ndvidirectory, region, Ystart, Yend,
+    outname="Mzimba", outext="show")}
 
 #adding points to the map
 shape="SLP_Mzimba"
 shapedir=paste(system.file("extdata/shape", package="ndvits"),
     "/", sep="")
-MaxAnomaly(ndvidirectory, region, Ystart, Yend,
+\donttest{MaxAnomaly(ndvidirectory, region, Ystart, Yend,
     outname="Mzimba", outext="show", shapefile=shape,
-    shapedir=shapedir, label="Village") 
+    shapedir=shapedir, label="Village")}
 }
 \keyword{anomaly map}

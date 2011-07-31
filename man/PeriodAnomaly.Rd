@@ -106,15 +106,15 @@ Ystart=2004
 Yend=2009
 period=2:18
 #executing PeriodAnomaly
-PeriodAnomaly(ndvidirectory, region, Ystart, Yend, 
-    period = period, outname="Mzimba", outext="show") 
+\donttest{PeriodAnomaly(ndvidirectory, region, Ystart, Yend, 
+    period = period, outname="Mzimba", outext="show") }
 
 #adding points to the map
 shape="SLP_Mzimba"
 shapedir=paste(system.file("extdata/shape", package="ndvits"),
     "/", sep="")
-PeriodAnomaly(ndvidirectory, region, Ystart, Yend,
+\donttest{PeriodAnomaly(ndvidirectory, region, Ystart, Yend,
     period = period, outname="Mzimba", outext="show",
-    shapefile=shape, shapedir=shapedir, label="Village") 
+    shapefile=shape, shapedir=shapedir, label="Village")}
 }
 \keyword{anomaly map}

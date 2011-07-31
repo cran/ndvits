@@ -33,6 +33,7 @@ data(SLPSAs_full)
 ts = normNDVI(SLPSAs_full$full, SLPSAs_full$maxNDVI)
 
 signal=STLperArea(ts, area = SLPSAs_full$full$name,
-    Ystart = SLPSAs_full$Ystart, period = SLPSAs_full$period)
+    Ystart = SLPSAs_full$Ystart, period = SLPSAs_full$period, 
+    SGfilter=FALSE)
 }
 \keyword{datasets}

@@ -133,8 +133,22 @@ R. Frelat, B. Gerard
 \code{\link{normNDVI}}, \code{\link{PlotTS}}, \code{\link{STLperArea}}
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+#local variables
+ndvidirectory=paste(system.file("extdata/VITO_Mzimba",
+    package="ndvits"), "/", sep="")
+region="Mzimba"
+Ystart=2004
+Yend=2009
+shape="SLP_Mzimba"
+shapedir=paste(system.file("extdata/shape", package="ndvits"),
+    "/", sep="")
+outfile = "mzimbaTS.txt"
+outfile2 = "MzimbaTS.pdf"
+
+#executing TimeSeriesAnalysis
+# signal = TimeSeriesAnalysis(shape, shapedir, ndvidirectory, region,
+#     Ystart, Yend, outfile, outfile2)
+# Then enter "Village" when asked
+
 }
 \keyword{ts extraction}

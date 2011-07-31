@@ -41,6 +41,7 @@ ts = normNDVI(SLPSAs_full$full, SLPSAs_full$maxNDVI)
 
 #STLperArea
 signal=STLperArea(ts, area = SLPSAs_full$full$name, 
-    Ystart = SLPSAs_full$Ystart, period = SLPSAs_full$period)
+    Ystart = SLPSAs_full$Ystart, period = SLPSAs_full$period, 
+    SGfilter=FALSE)
 }
 \keyword{ts decomposition}

@@ -56,15 +56,15 @@ listname=c(listname,timetoMap(ndvidirectory,region, 2004,i,1))
 }
 
 #executing multimap function
-multimap(listname, label, outname="Mzimba2004", org=c(4,3),
-    title = "NDVI values during 2004 in Mzimba")
+\donttest{multimap(listname, label, outname="Mzimba2004", org=c(4,3),
+    title = "NDVI values during 2004 in Mzimba")}
 
 #adding points to the maps
 shape="SLP_Mzimba"
 shapedir=paste(system.file("extdata/shape", package="ndvits"),
     "/", sep="")
-multimap(listname, label, outname="Mzimba2004", org=c(4,3), 
+\donttest{multimap(listname, label, outname="Mzimba2004", org=c(4,3), 
     title = "NDVI values during 2004 in Mzimba", shapefile=shape,
-    shapedir=shapedir)
+    shapedir=shapedir)}
 }
 \keyword{plot}

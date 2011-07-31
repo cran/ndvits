@@ -64,7 +64,7 @@ tolist(ndvidirectory, region, Ystart, Yend,
     , outfile=list) 
 
 #executing ExtractFiles
-signal = ExtractFile(shape, shapedir, list, outfile="TS.txt",
-    period = period)
+\donttest{signal = ExtractFile(shape, shapedir, list, outfile="TS.txt",
+    period = period)}
 }
 \keyword{ts extraction}

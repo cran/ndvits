@@ -70,8 +70,9 @@ region="Mzimba"
 year=2004
 
 #processing the map of the maximum in 2004
-max=mapmaxyear(ndvidirectory, region, year)
+\donttest{max=mapmaxyear(ndvidirectory, region, year)
 
 #display the map
 savemap(max)
+}
 }

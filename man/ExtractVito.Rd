@@ -56,7 +56,7 @@ shapedir=paste(system.file("extdata/shape", package="ndvits"),
     "/", sep="")
 
 #executing ExtractFiles
-signal = ExtractVito(shape, shapedir, ndvidirectory, region, 
-    outfile = "TS-Mzimba.txt", Ystart = Ystart, Yend = Yend)
+\donttest{signal = ExtractVito(shape, shapedir, ndvidirectory, region, 
+    outfile = "TS-Mzimba.txt", Ystart = Ystart, Yend = Yend)}
 }
 \keyword{ts extraction}

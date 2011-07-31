@@ -104,16 +104,20 @@ Ystart=2004
 Yend=2009
 
 #executing maplocalstat
+\donttest{
 res=maplocalstat(ndvidirectory, region, Ystart, Yend,
-    outname="Mzimba", outext="show") 
+    outname="Mzimba", outext="show")
+}
 
 #adding points to the map
 shape="SLP_Mzimba"
 shapedir=paste(system.file("extdata/shape", package="ndvits"),
     "/", sep="")
+\donttest{
 res=maplocalstat(ndvidirectory, region, Ystart, Yend,
     outname="Mzimba", outext="show", shapefile=shape,
-    shapedir=shapedir) 
+    shapedir=shapedir)
+}
 }
 
 \keyword{spatial}
